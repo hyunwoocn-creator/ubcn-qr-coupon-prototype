@@ -51,7 +51,7 @@ export default function CouponIssuePage() {
 
     if (!isValidPhoneNumber(customerIdentifier)) {
       const message =
-        "휴대폰 번호는 숫자 11자리로 입력해 주세요. 예: 010-2824-0609";
+        "휴대폰 번호는 숫자 11자리로 입력해 주세요. 예: 010-1234-5678";
       setFieldError(message);
       window.alert(message);
       return;
@@ -148,7 +148,7 @@ export default function CouponIssuePage() {
                 name="customerIdentifier"
                 type="tel"
                 inputMode="numeric"
-                placeholder="예: 010-2824-0609"
+                placeholder="예: 010-1234-5678"
                 value={customerIdentifier}
                 onChange={(event) =>
                   setCustomerIdentifier(formatPhoneNumber(event.target.value))
